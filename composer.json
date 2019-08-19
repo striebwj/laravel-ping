@@ -1,0 +1,40 @@
+{
+  "name": "airranged/laravel-ping",
+  "description": "A Laravel Package to ping a URL.",
+  "keywords": [
+    "airranged",
+    "laravel-ping"
+  ],
+  "homepage": "https://github.com/airranged/laravel-ping",
+  "license": "MIT",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Airranged",
+      "email": "opensource@airranged.ca",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^7.1",
+    "illuminate/support": "5.8.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Airranged\\LaravelPing\\": "src"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Airranged\\LaravelPing\\LaravelPingServiceProvider"
+      ],
+      "aliases": {
+        "Ping": "Airranged\\LaravelPing\\LaravelPingFacade"
+      }
+    }
+  }
+}
