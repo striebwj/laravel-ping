@@ -18,7 +18,7 @@ composer require airranged/laravel-ping
 Ping a URL and get the status code and response time back:
 
 ```php
-use Airranged\PingPackage\Ping;
+use Airranged\LaravelPing\Ping;
 
 ...
 
@@ -33,7 +33,7 @@ echo "Response was " . $ping->getTotalTime() . "ms";
 Ping a Password Protected URL and get the status code and response time back:
 
 ```php
-use Airranged\PingPackage\Ping;
+use Airranged\LaravelPing\Ping;
 
 ...
 
